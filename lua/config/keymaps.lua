@@ -1,0 +1,23 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
+--
+--
+--
+-- map('ga', vim.lsp.buf.code_action, '[G]oto Code [A]ction', { 'n', 'x' })  -- was 'gra'
+-- map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')  -- was 'grr'
+-- map('gi', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')  -- was 'gri'
+-- map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')  -- was 'grd'
+-- map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')  -- was 'grD'
+-- map('gds', require('telescope.builtin').lsp_document_symbols, 'Open Document Symbols')  -- was 'gO'
+-- map('gws', require('telescope.builtin').lsp_dynamic_workspace_symbols, 'Open Workspace Symbols')  -- was 'gW'
+-- map('gtd', require('telescope.builtin').lsp_type_definitions, '[G]oto [T]ype Definition')  -- was 'grt'
+-- map('K', vim.lsp.buf.hover, 'Hover Documentation')  -- explicitly added
+--
+-- vim.keymap.set("n", "őb", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
+-- vim.keymap.set("n", "ŐB", "<cmd>blast<cr>", { desc = "Last Buffer" })
+--
+-- Remap all [ commands to ő
+vim.keymap.set("n", "ő", "[", { remap = true, desc = "Act as [" })
+-- Remap all ] commands to ú
+vim.keymap.set("n", "ú", "]", { remap = true, desc = "Act as ]" })

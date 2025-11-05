@@ -187,10 +187,41 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- Original tools
         "stylua",
         "shellcheck",
         "shfmt",
         "flake8",
+        "biome",
+
+        -- Language servers
+        "bash-language-server",
+        "docker-compose-language-service",
+        "dockerfile-language-server",
+        "gopls",
+        "json-lsp",
+        "kotlin-language-server",
+        "lua-language-server",
+        "marksman",
+        "pyright",
+        "ruff",
+        "tailwindcss-language-server",
+        "typescript-language-server",
+
+        -- Linters
+        "golangci-lint",
+        "hadolint",
+        "ktlint",
+        "markdownlint-cli2",
+
+        -- Formatters
+        "gofumpt",
+        "goimports",
+
+        -- Other tools
+        "taplo",
+        "tree-sitter-cli",
+        "vtsls",
       },
     },
   },

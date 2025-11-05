@@ -21,3 +21,11 @@
 vim.keymap.set("n", "ő", "[", { remap = true, desc = "Act as [" })
 -- Remap all ] commands to ú
 vim.keymap.set("n", "ú", "]", { remap = true, desc = "Act as ]" })
+
+vim.keymap.set("n", "<F2>", function()
+  return ":IncRename " .. vim.fn.expand("<cword>")
+end, { expr = true, desc = "Rename symbol" })
+
+vim.keymap.set("i", "<C-i>", function()
+  require("blink.cmp").show()
+end, { desc = "Trigger completion" })
